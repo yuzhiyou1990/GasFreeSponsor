@@ -39,7 +39,7 @@ public struct Transaction: Encodable {
 
 public struct Sponsor: Decodable {
     public var sponsorable: Bool
-    public var sponsorName: String
+    public var sponsorName: String?
     public var sponsorIcon: String?
     public var sponsorWebsite: String?
 }
