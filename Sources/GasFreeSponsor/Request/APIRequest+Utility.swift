@@ -27,6 +27,14 @@ public struct Transaction: Encodable {
     public var value: String
     public var data: String
     public var gas: String
+    
+    public init(from: String, to: String, value: String, data: String, gas: String) {
+        self.from = from
+        self.to = to
+        self.value = value
+        self.data = data
+        self.gas = gas
+    }
 }
 
 public struct Sponsor: Decodable {
